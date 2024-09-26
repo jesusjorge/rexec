@@ -4,7 +4,7 @@
 
 ## Installation
 
-To "install" this utility, save the `/core/boot.py` file into your project folder and modify the `basePath` string inside the file.
+To "install" this utility, save the [/core/boot.py](https://github.com/jesusjorge/rexec/blob/main/core/boot.py) file into your project folder and modify the `basePath` string inside the file.
 
 ### Recommended Paths
 
