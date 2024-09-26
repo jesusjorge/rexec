@@ -6,5 +6,5 @@ def returns():
     R = R.split('dolares')[1]
     R = R.split('>')[3]
     R = R.split('<')[0]
-    R = ''.join(c for c in R if c in "0123456789.")
+    R = ''.join(n for n in R if n in "0123456789.")
     return R
