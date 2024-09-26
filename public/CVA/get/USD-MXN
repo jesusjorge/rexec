@@ -1,5 +1,3 @@
-import re
-
 def returns():
     R = U.read("https://me2.grupocva.com/me/catalogo_ip/",ignoreError=True)
     R = R.decode('iso-8859-1')
