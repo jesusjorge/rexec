@@ -3,7 +3,8 @@ import re
 def returns():
     R = U.read("https://me2.grupocva.com/me/catalogo_ip/",ignoreError=True)
     R = R.decode('iso-8859-1')
-    R = R.split('dolar')[1]                                    #Text after dolar
-    R = re.findall('<[^/][^>]*>\\D*(\\d+(?:\\.\\d+)?)\\D',R)   #Matches <tag>*dd(.dd)*</tag>
-    R = R[0]
+    R = R.split('dolar')[1]
+    R = R.split('<')[3]
+    R = R.split('>')[1]
+    R = ''.join(c for c in R if c in ".0123456789")
     return R
