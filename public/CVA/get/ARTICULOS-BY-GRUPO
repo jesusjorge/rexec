@@ -1,0 +1,6 @@
+import re
+
+def returns(codigoCliente,grupo="%"):
+    R = U.read(f"https://www.grupocva.com/catalogo_clientes_xml/lista_precios.xml?depto=1&c=1&dt=1&promos=1&cliente={codigoCliente}&grupo={grupo}")
+    R = R.decode('utf-8')
+    return R
