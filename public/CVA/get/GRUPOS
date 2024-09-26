@@ -1,0 +1,10 @@
+import re
+
+def returns():
+    R = U.read("https://www.grupocva.com/catalogo.php")
+    R = R.decode('iso-8859-1')
+    R = re.search(r'<select name="grupo".*?</select>',R,re.DOTALL)
+    R = R.group(0)
+    R = re.findall('<option[^>]*>(.*?)</option>',R)
+    R = R[1:]
+    return R
