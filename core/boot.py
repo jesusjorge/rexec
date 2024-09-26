@@ -87,7 +87,7 @@ class U:
         returns = namespace.get("returns")
         if type(returns) is types.FunctionType:
             return returns(*params)
-#################################################################################################################################
+
     class Cache:
         @classmethod
         @property
@@ -144,7 +144,6 @@ class U:
     @property
     def help(cls):
         return f"""
-----------------------------------------------------------------------
 class U:
 
 <Properties>
@@ -182,5 +181,4 @@ class U:
 <Classes>
     Cache
         Handles everything related U.read(), but stores the result
-----------------------------------------------------------------------
 """
